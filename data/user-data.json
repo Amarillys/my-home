@@ -1,0 +1,51 @@
+{
+  "theme": "rabbit",
+  "server": "local",
+  "ui": [{
+    "name": "tiny-clock",
+    "position": {
+      "x": "79vw",
+      "y": "94vh",
+      "h": "3.2vh"
+    },
+    "padding": ".3vw",
+    "path": "tiny-clock",
+    "title": "Tiny Clock",
+    "type": "inject",
+    "script": ["index.js"],
+    "bg": "lightgray",
+    "opacity": 0.8
+  }, {
+    "name": "collection",
+    "position": {
+      "x": "22vw",
+      "y": "5vh",
+      "w": "56vw",
+      "h": "40vh"
+    },
+    "padding": ".5vw",
+    "data": {
+      "websites": [{
+        "name": "Twitter",
+        "url": "https://twitter.com",
+        "color": "blue",
+        "img": "https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/brand-download-img-1.jpg"
+      }, {
+        "name": "Pixiv",
+        "url": "https://pixiv.net",
+        "color": "blue",
+        "img": "https://www.pixiv.net/favicon.ico"
+      }, {
+        "name": "Bilibili",
+        "url": "https://bilibili.com",
+        "color": "blue",
+        "img": "https://bilibili.com/favicon.ico"
+      }]
+    },
+    "type": "inject",
+    "script": ["index.js"],
+    "entry": "initTab",
+    "opacity": 0.8,
+    "bg": "lightgray"
+  }]
+}
