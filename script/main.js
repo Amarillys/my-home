@@ -1,5 +1,5 @@
 async function fetchUserData() {
-  let data = await (await fetch('/data/user-data.json')).json()
+  let data = await (await fetch('./data/user-data.json')).json()
   if (data.server != 'local') data = await (await fetch(data.server)).json()
   return data
 }
@@ -37,11 +37,11 @@ function initUI(uiData) {
       div.style.top = window.innerHeight + ui.position.y
     }
     if (ui.type === 'inject') {
-      fetch(`../plugin/${ui.path}/index.html`).then(h => h.text()).then(html => {
+      fetch(`./plugin/${ui.path}/index.html`).then(h => h.text()).then(html => {
         div.innerHTML = html
         ui.script.forEach(script => {
           const scriptEl = document.createElement('script')
-          scriptEl.src = `../plugin/${ui.path}/${script}`
+          scriptEl.src = `./plugin/${ui.path}/${script}`
           scriptEl.type = `module`
           scriptEl.onload = () => {
             typeof window[ui.entry] === "function" && window[ui.entry](ui)
@@ -65,6 +65,8 @@ function registerI18N (i18nObject) {
 }
 
 function getI18N(key) {
+  if (!I18N[window.language]) I18N[window.language] = I18N[window.language.slice(0, 2)]
+  if (!I18N[window.language]) return key
   return I18N[window.language][key] || key
 }
 

@@ -20,7 +20,7 @@
     "position": {
       "x": "22vw",
       "y": "5vh",
-      "w": "56vw",
+      "w": "54vw",
       "h": "40vh"
     },
     "padding": ".5vw",
@@ -40,6 +40,11 @@
         "url": "https://bilibili.com",
         "color": "blue",
         "img": "https://bilibili.com/favicon.ico"
+      }, {
+        "name": "Kemono",
+        "url": "https://kemono.party/favorites",
+        "color": "blue",
+        "img": "https://kemono.party/favicon.ico"
       }]
     },
     "type": "inject",

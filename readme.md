@@ -1,0 +1,1 @@
+https://mkz.life/home
