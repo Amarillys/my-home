@@ -6,5 +6,5 @@ registerI18N(text)
 
 setInterval(() => {
   const dayKey = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"]
-  timerEl.innerHTML = `${new Date().toLocaleString()}  ${ getI18N(dayKey[new Date().getDay()])}`
+  timerEl.innerHTML = `${new Date().toLocaleString()}  ${getI18N(dayKey[new Date().getDay()])}`
 })

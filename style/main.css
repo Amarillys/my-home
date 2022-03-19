@@ -1,0 +1,67 @@
+.dark .panel {
+  background-color: rgba(40, 50, 64, 0.8);
+}
+
+.dark {
+  color: rgba(233, 233, 233, 0.9)
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.small-padding {
+  padding: 0.25em;
+}
+
+.small-left-margin {
+  margin-left: .6em;
+}
+
+
+.big-1 {
+  font-size: 1.2em;
+}
+.big-2 {
+  font-size: 1.2em;
+}
+.big-4 {
+  font-size: 1.4em;
+}
+.big-5 {
+  font-size: 1.5em;
+}
+.big-6 {
+  font-size: 1.6em;
+}
+.big-8 {
+  font-size: 1.8em;
+}
+.big-10 {
+  font-size: 2em;
+}
+.big-12 {
+  font-size: 2.2em;
+}
+
+.small-5 {
+  font-size: .5em;
+}
+
+.small-6 {
+  font-size: .6em;
+}
+
+.small-7 {
+  font-size: .7em;
+}
+
+.small-8 {
+  font-size: .8em;
+}

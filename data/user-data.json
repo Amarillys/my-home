@@ -52,5 +52,29 @@
     "entry": "initTab",
     "opacity": 0.8,
     "bg": "lightgray"
+  },  {
+    "name": "weather",
+    "position": {
+      "x": "79vw",
+      "y": "5vh",
+      "w": "18vw",
+      "h": "40vh"
+    },
+    "padding": ".5vw",
+    "data": {
+      "latitude": 114.205823,
+      "longitude": 22.646836,
+      "now": "https://devapi.qweather.com/v7/weather/now",
+      "sevenDay": "https://devapi.qweather.com/v7/weather/3d",
+      "lifePoint": "https://devapi.qweather.com/v7/indices/1d",
+      "recent": "https://devapi.qweather.com/v7/minutely/5m",
+      "apiKey": "2f8430444ac94ec68d1e112a523ec064",
+      "lang": "zh"
+    },
+    "type": "inject",
+    "script": ["index.js"],
+    "entry": "initWeather",
+    "opacity": 0.8,
+    "bg": "lightgray"
   }]
 }

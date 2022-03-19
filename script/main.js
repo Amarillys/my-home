@@ -61,7 +61,10 @@ function initDefaultUI() {
 const I18N = {}
 window.language = window.navigator.language
 function registerI18N (i18nObject) {
-  Object.assign(I18N, i18nObject)
+  for (let key in i18nObject) {
+    I18N[key] = I18N[key] || {}
+    Object.assign(I18N[key], i18nObject[key])
+  }
 }
 
 function getI18N(key) {
