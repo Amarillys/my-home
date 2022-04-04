@@ -41,10 +41,35 @@
         "color": "blue",
         "img": "https://bilibili.com/favicon.ico"
       }, {
-        "name": "Kemono",
-        "url": "https://kemono.party/favorites",
+        "name": "Taobao Orders",
+        "url": "https://buyertrade.taobao.com/trade/itemlist/list_bought_items.htm",
+        "color": "red",
+        "img": "https://taobao.com/favicon.ico"
+      }, {
+        "name": "JD Orders",
+        "url": "https://order.jd.com/center/list.action",
+        "color": "red",
+        "img": "https://www.jd.com/favicon.ico"
+      }, {
+        "name": "IT Home",
+        "url": "https://ithome.com",
         "color": "blue",
-        "img": "https://kemono.party/favicon.ico"
+        "img": "https://www.ithome.com/favicon.ico"
+      }, {
+        "name": "KaiHeiLa",
+        "url": "https://www.kaiheila.cn/",
+        "color": "blue",
+        "img": "https://www.kaiheila.cn/favicon.ico"
+      }, {
+        "name": "PixivKKChara",
+        "url": "https://www.pixiv.net/tags/キャラ配布(コイカツ)/artworks",
+        "color": "blue",
+        "img": "https://www.pixiv.net/favicon.ico"
+      }, {
+        "name": "Yoasobi",
+        "url": "https://www.youtube.com/watch?v=GFtIPHTdfkA",
+        "color": "blue",
+        "img": "https://www.pixiv.net/favicon.ico"
       }]
     },
     "type": "inject",

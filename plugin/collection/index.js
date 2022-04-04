@@ -1,5 +1,6 @@
 window.initTab = function (ui) {
   const container = document.getElementById("collection")
+  ui.data.websites = ui.data.websites.sort((p, q) => p.name > q.name ? 1: -1);
   ui.data.websites.forEach(website => {
     const webEl = document.createElement("a")
     webEl.href = website.url
@@ -9,7 +10,7 @@ window.initTab = function (ui) {
       <div class="logo-container">
         <img src="${website.img}">
       </div>
-      <span>${website.name}</span>
+      <span style="color: ${website.color}">${website.name}</span>
     `
     container.appendChild(webEl)
   })
