@@ -1,11 +1,24 @@
 import text from './i18n.js'
-import { registerI18N, getI18N } from '../../script/main.js'
+import { registerI18N, getI18N, getParameters } from '../../script/main.js'
 
 registerI18N(text)
 
 window.initWeather = function (comp) {
-  const config = comp.data
-  fetch(`${config.now}?key=${config.apiKey}&location=${config.latitude},${config.longitude}&lang=${config.lang}`)
+  const urlParams = getParameters()
+  if (urlParams.latitude && urlParams.longitude) {
+    localStorage.setItem('latitude', urlParams.latitude)
+    localStorage.setItem('longitude', urlParams.longitude)
+  }
+
+  let config = comp.data
+  if (localStorage.getItem('latitude') && localStorage.getItem('longitude')) {
+    config.latitude = localStorage.getItem('latitude')
+    config.longitude = localStorage.getItem('longitude')
+  }
+
+  const latitude = urlParams.latitude || config.latitude
+  const longitude = urlParams.longitude || config.longitude
+  fetch(`${config.now}?key=${config.apiKey}&location=${latitude},${longitude}&lang=${config.lang}`)
   .then(r => r.json()).then(data => {
     const { code, now, fxLink } = data
     if (code != 200) return

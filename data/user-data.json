@@ -14,7 +14,7 @@
     "type": "inject",
     "script": ["index.js"],
     "bg": "lightgray",
-    "opacity": 0.8
+    "opacity": 0.75
   }, {
     "name": "collection",
     "position": {
@@ -28,55 +28,50 @@
       "websites": [{
         "name": "Twitter",
         "url": "https://twitter.com",
-        "color": "blue",
-        "img": "https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/brand-download-img-1.jpg"
+        "color": "blue"
       }, {
         "name": "Pixiv",
         "url": "https://pixiv.net",
-        "color": "blue",
-        "img": "https://www.pixiv.net/favicon.ico"
+        "color": "blue"
       }, {
         "name": "Bilibili",
         "url": "https://bilibili.com",
-        "color": "blue",
-        "img": "https://bilibili.com/favicon.ico"
+        "color": "blue"
       }, {
-        "name": "Taobao Orders",
+        "name": "Taobao-Me",
         "url": "https://buyertrade.taobao.com/trade/itemlist/list_bought_items.htm",
-        "color": "red",
-        "img": "https://taobao.com/favicon.ico"
+        "color": "red"
       }, {
         "name": "JD Orders",
         "url": "https://order.jd.com/center/list.action",
-        "color": "red",
-        "img": "https://www.jd.com/favicon.ico"
+        "color": "red"
       }, {
         "name": "IT Home",
         "url": "https://ithome.com",
-        "color": "blue",
-        "img": "https://www.ithome.com/favicon.ico"
+        "color": "blue"
       }, {
         "name": "KaiHeiLa",
         "url": "https://www.kaiheila.cn/",
-        "color": "blue",
-        "img": "https://www.kaiheila.cn/favicon.ico"
+        "color": "blue"
       }, {
-        "name": "PixivKKChara",
+        "name": "Pixiv-KK",
         "url": "https://www.pixiv.net/tags/キャラ配布(コイカツ)/artworks",
-        "color": "blue",
-        "img": "https://www.pixiv.net/favicon.ico"
+        "color": "blue"
       }, {
-        "name": "Yoasobi",
-        "url": "https://www.youtube.com/watch?v=GFtIPHTdfkA",
-        "color": "blue",
-        "img": "https://www.pixiv.net/favicon.ico"
+        "name": "Github",
+        "url": "https://github.com/Amarillys",
+        "color": "black"
+      }, {
+        "name": "Kemono",
+        "url": "https://kemono.party/favorites",
+        "color": "blue"
       }]
     },
     "type": "inject",
     "script": ["index.js"],
     "entry": "initTab",
-    "opacity": 0.8,
-    "bg": "lightgray"
+    "bg": "lightgray",
+    "opacity": 0.83
   },  {
     "name": "weather",
     "position": {

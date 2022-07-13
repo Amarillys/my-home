@@ -1,1 +1,1 @@
-https://maikaze.vercel.app/
+https://mkz.life/home

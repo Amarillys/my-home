@@ -73,6 +73,14 @@ function getI18N(key) {
   return I18N[window.language][key] || key
 }
 
+function getParameters() {
+  let queryDict = {}
+  window.location.search.substr(1).split("&").filter(k => k).forEach(
+    function(item) {queryDict[item.split("=")[0]] = item.split("=")[1]}
+  )
+  return queryDict;
+}
+
 export {
-  fetchUserData, generateDefaultData, initDefaultUI, initUI, initTheme, registerI18N, getI18N
+  fetchUserData, generateDefaultData, initDefaultUI, initUI, initTheme, registerI18N, getI18N, getParameters
 }

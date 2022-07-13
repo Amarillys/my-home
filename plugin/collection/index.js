@@ -8,7 +8,7 @@ window.initTab = function (ui) {
     webEl.className = "tab-container"
     webEl.innerHTML = `
       <div class="logo-container">
-        <img src="${website.img}">
+        <img src="${website.icon || `./plugin/collection/static/icons/${website.name.split('-')[0].toLowerCase()}.png`}">
       </div>
       <span style="color: ${website.color}">${website.name}</span>
     `
